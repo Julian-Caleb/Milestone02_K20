@@ -6,7 +6,7 @@ const page = (props: Props) => {
   return (
     <>
         <section className=' w-full h-screen flex justify-center items-center'>
-            <p>Ini Landing Page</p>
+            <p>Asep</p>
         </section>
     </>
   )
