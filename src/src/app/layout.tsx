@@ -1,4 +1,7 @@
 import Navbar from '@/components/Navbar'
+import Header1 from '@/components/Header1'
+import HeaderUser from '@/components/HeaderUser'
+import HeaderAdmin from '@/components/HeaderAdmin'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -18,9 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-          <Navbar />
+        <HeaderUser />
+       
+        
           <div className="z-0 bg-white dark:bg-dark-100 dark:text-gray-200">
             {children}
+            
           </div>
       </body>
     </html>
