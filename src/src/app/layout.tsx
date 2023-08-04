@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-          <div className="z-0 bg-white dark:bg-dark-100 dark:text-gray-200">
+        <div className="z-0 bg-[#898121] h-full max-w-screen text-black ">
             {children}
           </div>
       </body>
