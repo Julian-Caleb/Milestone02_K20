@@ -9,6 +9,8 @@ import Image from 'next/image';
 
 const User = () => {
   const [selectedBoardIndex, setSelectedBoardIndex] = useState(-1);
+  const [sortedMessages, setSortedMessages] = useState(DUMMY_INFORMATION.slice());
+  const [isSorted, setIsSorted] = useState(false); // Track whether messages are sorted or not
 
   const handleBoardClick = (index: number) => {
     setSelectedBoardIndex(index);
@@ -17,6 +19,24 @@ const User = () => {
   const handleCloseBoardDetail = () => {
     setSelectedBoardIndex(-1);
   };
+  const handleSortAlphabetically = () => {
+    if (isSorted) {
+      setSortedMessages(DUMMY_INFORMATION.slice()); // Revert to the original order
+    } else {
+      const sorted = sortedMessages.slice().sort((a, b) => a.title.localeCompare(b.title));
+      setSortedMessages(sorted);
+    }
+    setIsSorted(!isSorted); // Toggle the sorted state
+    
+  };
+  // make me a bubble sort
+
+  const handleSortDate = () => {
+    const sorted = sortedMessages.slice().sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+    setSortedMessages(sorted);
+
+}
+  
 
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
@@ -41,14 +61,16 @@ const User = () => {
 
   return (
     <>
-      <HeaderUser />
+      <HeaderUser onFilterClick1={handleSortAlphabetically} onFilterClick2={handleSortDate}>
+      </HeaderUser>
+      
       <div className="flex justify-center min-h-screen h-max min-w-screen">
         {selectedBoardIndex !== -1 && (
           <div className="z-50 w-max h-max flex items-center justify-center my-10 ">
             <BoardDetail
-              title={DUMMY_INFORMATION[selectedBoardIndex].title}
-              date={DUMMY_INFORMATION[selectedBoardIndex].date}
-              content={DUMMY_INFORMATION[selectedBoardIndex].content}
+              title={sortedMessages[selectedBoardIndex].title}
+              date={sortedMessages[selectedBoardIndex].date}
+              content={sortedMessages[selectedBoardIndex].content}
               className="board-detail"
             />
           </div>
@@ -57,7 +79,7 @@ const User = () => {
           <div className='flex flex-col justify-center items-center'>
             <h1 className='text-[64px] bold'>Board SPARTA 2022</h1>
             <div className="h-max w-[60vw] m-10 grid grid-cols-2 gap-10">
-              {DUMMY_INFORMATION.map((info, index) => (
+              {sortedMessages.map((info, index) => (
                 <div key={index} onClick={() => handleBoardClick(index)}>
                   <Board title={info.title} />
                 </div>

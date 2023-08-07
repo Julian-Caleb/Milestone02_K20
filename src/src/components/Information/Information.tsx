@@ -12,14 +12,14 @@ class Information {
   
 const DUMMY_INFORMATION: Information[] = [
     new Information(
-      "Lorem Ipsum Title 1",
+      "c",
       "August 1, 2023",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius turpis in lectus faucibus tincidunt."
+      "info c"
     ),
     new Information(
-      "Lorem Ipsum Title 2",
+      "b",
       "August 5, 2023",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas commodo nunc ut massa tincidunt, in tristique nisi ultricies."
+      "info b"
     ),
     new Information(
       "Lorem Ipsum Title 3",
