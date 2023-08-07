@@ -12,11 +12,6 @@ Mudahnya penyebaran informasi pada saat ini memang menguntungkan, namun juga ter
 
 ## Fitur
 Fitur yang tersedia:
-- Login dan Logout -> memungkinkan pengguna untuk masuk ke sistem dengan memasukkan username dan password yang telah terdaftar sebelumnya dan keluar atau mengakhiri sesi
-- Sign up -> melakukan proses pendaftaran user baru
-- Dashboard -> menampilkan daftar informasi dashboard kepada pengguna
-- Search -> mencari item tertentu berdasarkan kata kunci (keyword)
-- Filter -> memngurangi tampilan data dengan menampilkan hanya item atau informasi yang sesuai dengan kriteria tertentu
 - Main page -> tampilan utama
 - Dashboard Information -> menampilkan daftar informasi dashboard kepada pengguna
 - Sorting -> memngurangi tampilan data dengan menampilkan hanya item atau informasi yang sesuai dengan kriteria tertentu
