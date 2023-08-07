@@ -17,6 +17,9 @@ Fitur yang tersedia:
 - Dashboard -> menampilkan daftar informasi dashboard kepada pengguna
 - Search -> mencari item tertentu berdasarkan kata kunci (keyword)
 - Filter -> memngurangi tampilan data dengan menampilkan hanya item atau informasi yang sesuai dengan kriteria tertentu
+- Main page -> tampilan utama
+- Dashboard Information -> menampilkan daftar informasi dashboard kepada pengguna
+- Sorting -> memngurangi tampilan data dengan menampilkan hanya item atau informasi yang sesuai dengan kriteria tertentu
 
 ## Teknologi yang digunakan
 - nextjs 
