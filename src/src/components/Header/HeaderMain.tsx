@@ -1,10 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
 
-
 type Props = {}
 
-const Header1 = (props: Props) => {
+const HeaderMain = (props: Props) => {
   return (
     <header className = "flex items-center justify-between bg-amber-900 p-5 shadow-md mb-2 shadow-opacity-70 custom-shadow">
         <div className="rounded-full w-16 h-16 bg-orange-400">
@@ -21,4 +20,4 @@ const Header1 = (props: Props) => {
   )
 }
 
-export default Header1
+export default HeaderMain

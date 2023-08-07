@@ -1,16 +1,15 @@
-"use client"; // Mark the component as a client component
+"use client";
 
 import React, { useState, useEffect } from 'react';
 import Board from '@/components/Board/Board';
 import BoardDetail from '@/components/Board/BoardDetail';
-import HeaderUser from '@/components/HeaderUser';
+import HeaderUser from '@/components/Header/HeaderUser';
 import { DUMMY_INFORMATION } from '@/components/Information/Information';
-import Image from 'next/image';
 
 const User = () => {
   const [selectedBoardIndex, setSelectedBoardIndex] = useState(-1);
   const [sortedMessages, setSortedMessages] = useState(DUMMY_INFORMATION.slice());
-  const [isSorted, setIsSorted] = useState(false); // Track whether messages are sorted or not
+  const [isSorted, setIsSorted] = useState(false);
 
   const handleBoardClick = (index: number) => {
     setSelectedBoardIndex(index);
@@ -21,38 +20,33 @@ const User = () => {
   };
   const handleSortAlphabetically = () => {
     if (isSorted) {
-      setSortedMessages(DUMMY_INFORMATION.slice()); // Revert to the original order
+      setSortedMessages(DUMMY_INFORMATION.slice());
     } else {
       const sorted = sortedMessages.slice().sort((a, b) => a.title.localeCompare(b.title));
       setSortedMessages(sorted);
     }
-    setIsSorted(!isSorted); // Toggle the sorted state
+    setIsSorted(!isSorted);
     
   };
-  // make me a bubble sort
 
   const handleSortDate = () => {
     const sorted = sortedMessages.slice().sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
     setSortedMessages(sorted);
 
 }
-  
 
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
-      // Check if the click occurred outside of the BoardDetail component
       const boardDetail = document.querySelector('.board-detail');
       if (boardDetail && !boardDetail.contains(event.target as Node)) {
         handleCloseBoardDetail();
       }
     };
 
-    // Add click event listener when the BoardDetail is open
     if (selectedBoardIndex !== -1) {
       document.addEventListener('click', handleOutsideClick);
     }
 
-    // Remove click event listener when the component unmounts or BoardDetail is closed
     return () => {
       document.removeEventListener('click', handleOutsideClick);
     };
