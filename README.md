@@ -8,7 +8,7 @@
 4. [Tim penyusun](#Tim-penyusun)
 
 ## Deskripsi
-Program ini adalah program Web-App yang berfungsi untuk menyatukan sarana informasi, memudahkan pengguna dalam menyaring dan mencari informasi yang dibutuhkan sehingga informasi yang akan disampaikan ke pengguna dengan tampilan yang rapi dan sesuai kebutuhan.
+Mudahnya penyebaran informasi pada saat ini memang menguntungkan, namun juga terdapat kendala. Masalah tersebut seperti informasi yang kompleks serta penyebaran informasi yang tidak terpusat dan information overload. Hal tersebut dapat mempersulit pemahaman informasi bahkan kesalahpahaman. Berdasarkan hasil design thinking yang telah dilakukan, dipilih suatu solusi berupa Web-App yang berfungsi untuk menyatukan sarana informasi, memudahkan pengguna dalam menyaring dan mencari informasi yang dibutuhkan sehingga informasi yang akan disampaikan ke pengguna dengan tampilan yang rapi dan sesuai kebutuhan.
 
 ## Fitur
 Fitur yang tersedia:
