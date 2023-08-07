@@ -1,0 +1,2 @@
+Link Figma : https://www.figma.com/file/739nVmvD6HoDPBNWeQxndI/sync.tr?type=design&node-id=11-82&mode=design
+Link Vercel : https://milestone02-k20.vercel.app/
