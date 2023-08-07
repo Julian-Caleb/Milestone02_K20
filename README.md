@@ -23,17 +23,17 @@ Fitur yang tersedia:
 - tailwind
 - typescript
 
-## Tim penyusun
-- Khansa Adilla Reva - 19622022
-- Yusuf Ardian Sandi - 19622054
-- Harry Truman Suhalim - 19622104
-- Julian Caleb Simandjuntak - 19622121
-- Bastian H. Suryapratama - 19622138
-- Muhammad Adli Arindra - 19622170
-- Maximilian Sulistiyo - 19622173
-- Timotius Vivaldi Gunawan - 19622179
-- Kayla Namira Mariadi - 19622205
-- Muhammad Faishal Putra - 19622231
-- Fawwaz Aydin Mustofa - 19622243
-- Hugo Sabam Augusto - 19622256
-- Samy Muhammad Haikal - 19622307
+## Tim penyusun dan kontribusi
+- Khansa Adilla Reva - 19622022 - Board secara detail
+- Yusuf Ardian Sandi - 19622054 - Readme
+- Harry Truman Suhalim - 19622104 - Informasi
+- Julian Caleb Simandjuntak - 19622121 - Repo dan cleaning code, User Page
+- Bastian H. Suryapratama - 19622138 - Board secara overview
+- Muhammad Adli Arindra - 19622170 - UI/UX
+- Maximilian Sulistiyo - 19622173 - Deploy dan Bin, Landing page
+- Timotius Vivaldi Gunawan - 19622179 - UI/UX
+- Kayla Namira Mariadi - 19622205 - Readme
+- Muhammad Faishal Putra - 19622231 - Readme
+- Fawwaz Aydin Mustofa - 19622243 - Informasi
+- Hugo Sabam Augusto - 19622256 - Header dan Sorting
+- Samy Muhammad Haikal - 19622307 - Informasi
